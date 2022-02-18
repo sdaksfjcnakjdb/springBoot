@@ -1,0 +1,12 @@
+
+spring:
+  datasource:
+    name: mysql
+    url: jdbc:mysql://localhost:3306/mysql?characterEncoding=utf8&amp;serverTimezone=UTC&amp;serverTimezone=Asia/Shanghai    #url
+    username: root
+    password: "036018"
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.bean
