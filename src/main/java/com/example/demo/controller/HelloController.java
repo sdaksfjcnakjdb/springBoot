@@ -21,7 +21,7 @@ public class HelloController {
     public String sayHello(Model model){
         book.setId(63);
         Book book1 = bookservice.selectBy(book).get(0);
-        model.addAttribute ("name","你好!"+book1.getName());
+        model.addAttribute ("name",book1);
         return "index";
     }
 }
